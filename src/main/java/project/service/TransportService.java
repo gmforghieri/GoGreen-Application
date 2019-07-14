@@ -13,7 +13,7 @@ import java.net.URL;
 @Service
 public class TransportService {
 
-    private String apiKey = "key=AIzaSyDBHAC7HNUYpf7pxC8qLWzimyUhSOmY7xY";
+    private String apiKey = "key= **PRIVATE GOOGLE KEY, INSERT YOUR API-KEY HERE**";
 
     /**
      * this method will parse a valid API URL for given parameters.
