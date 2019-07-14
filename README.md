@@ -3,11 +3,11 @@
 </h1>
 <p align="center">
 <sup>
-<b>GoGreen 53 is an app to help track your co2 emissions with game aspects</b>
+<b>GoGreen is an app to help you track and reduce your co2 emissions with gamification aspects</b>
 </sup>
 </p>
 
-## How to use GoGreen 53
+## How to use the GoGreen App
 ### Login
 #### Login
 ![Screenshot of Login Screen](doc/screenshots/Login.png)
