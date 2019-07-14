@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" stylesheets="@../styles/stylesGreen.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controllers.ProfileController">
+    <children>
+        <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" styleClass="main_pane" AnchorPane.leftAnchor="0.0">
+         <left>
+            <JFXDrawer fx:id="drawerSidePanel" prefHeight="576.0" prefWidth="201.0" resizeContent="true" styleClass="side_drawer" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="175.0" fitWidth="180.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/logo.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Region VBox.vgrow="ALWAYS" />
+                        <Label fx:id="userLbl" alignment="CENTER" prefHeight="49.0" prefWidth="266.0" style="-fx-font-size: 30;" styleClass="title" text="UserName">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <VBox prefHeight="320.0" prefWidth="150.0" spacing="3.0">
+                           <children>
+                              <StackPane>
+                                 <children>
+                                    <FontAwesomeIcon accessibleRole="BUTTON" glyphStyleClass="icon" iconName="HOME" size="50px" />
+                                    <JFXButton alignment="CENTER" onAction="#handleBtnHome" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 22;" styleClass="jfx-button-side" text="Home">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane>
+                                 <children>
+                                    <FontAwesomeIcon glyphStyleClass="icon" iconName="USER" size="47" />
+                                    <JFXButton alignment="CENTER" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 22;" text="Profile">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <styleClass>
+                                          <String fx:value="jfx-button-side" />
+                                          <String fx:value="jfx-button-side-alter" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane>
+                                 <children>
+                                    <FontAwesomeIcon glyphStyleClass="icon" iconName="BUS" size="47" />
+                                    <JFXButton alignment="CENTER" onAction="#handleBtnTransportation" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 22;" styleClass="jfx-button-side" text="Transport">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane>
+                                 <children>
+                                    <FontAwesomeIcon glyphStyleClass="icon" iconName="TROPHY" size="50" />
+                                    <JFXButton alignment="CENTER" onAction="#handleBtnLeaderboard" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 22;" text="Leaderboard">
+                                       <styleClass>
+                                          <String fx:value="jfx-button-side" />
+                                          <String fx:value="jfx-button-side-alter" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane>
+                                 <children>
+                                    <FontAwesomeIcon glyphStyleClass="icon" iconName="ARROW_LEFT" selectionEnd="0" size="50" />
+                                    <JFXButton alignment="CENTER" onAction="#handleBtnLogout" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 22;" styleClass="jfx-button-side" text="Log Out">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="3.0" left="3.0" right="3.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="1.0" top="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <effect>
+                  <DropShadow color="#878787d0" offsetY="2.0" />
+               </effect>
+            </JFXDrawer>
+         </left>
+         <center>
+            <HBox prefHeight="576.0" prefWidth="777.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="576.0" prefWidth="340.0" spacing="20.0">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="350.0" style="-fx-font-size: 30;" styleClass="title" text="Statistics">
+                           <font>
+                              <Font name="Monaco" size="28.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <graphic>
+                              <FontAwesomeIcon glyphStyleClass="icon" iconName="BAR_CHART_O" size="50px" translateX="-20.0" />
+                           </graphic>
+                           <padding>
+                              <Insets top="25.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="300.0" styleClass="dark_card">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_dark_card" text="Total CO2 reduction:">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Text>
+                              <Label fx:id="totalEmissionsLbl" alignment="CENTER" styleClass="text_dark_card" text="NUMR">
+                                 <font>
+                                    <Font name="Monaco" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="240.0" prefHeight="55.0" prefWidth="300.0" styleClass="dark_card">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_dark_card" text="Solar panels installed:">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Text>
+                              <Label fx:id="solarPanelsLbl" alignment="CENTER" styleClass="text_dark_card" text="NUMR">
+                                 <font>
+                                    <Font name="Monaco" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="240.0" prefHeight="55.0" prefWidth="300.0" styleClass="dark_card">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_dark_card" text="Vegan meals consumed:">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Text>
+                              <Label fx:id="veganMealsLbl" alignment="CENTER" styleClass="text_dark_card" text="NUMR">
+                                 <font>
+                                    <Font name="Monaco" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="300.0" styleClass="dark_card">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_dark_card" text="Local products bought:" wrappingWidth="185.199951171875">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Text>
+                              <Label fx:id="localProductsLbl" alignment="CENTER" styleClass="text_dark_card" text="NUMR">
+                                 <font>
+                                    <Font name="Monaco" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="240.0" prefHeight="55.0" prefWidth="300.0" styleClass="dark_card">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_dark_card" text="KM travelled by bike:">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Text>
+                              <Label fx:id="kmByBikeLbl" alignment="CENTER" styleClass="text_dark_card" text="NUMR">
+                                 <font>
+                                    <Font name="Monaco" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="240.0" prefHeight="55.0" prefWidth="300.0" styleClass="dark_card">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_dark_card" text="KM by public transport:" wrappingWidth="185.1999969482422">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Text>
+                              <Label fx:id="kmByPubTransLbl" alignment="CENTER" styleClass="text_dark_card" text="NUMR">
+                                 <font>
+                                    <Font name="Monaco" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="61.0" prefWidth="300.0" spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER" style="-fx-font-size: 30;" styleClass="title" text="Theme">
+                                 <font>
+                                    <Font name="Monaco" size="28.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton onAction="#btnThemePink" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: linear-gradient(#cb98cc 0%, #b589be 100%);" text=" " />
+                              <JFXButton onAction="#btnThemeBlue" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: linear-gradient(#62adcc 0%, #578cbe 100%);" text=" " />
+                              <JFXButton onAction="#btnThemeGreen" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: linear-gradient(#a0cc6e 0%, #89be72 100%);" text=" " />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <ScrollPane fitToWidth="true" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="576.0" prefWidth="484.0" style="-fx-focus-color: transparent; -fx-faint-focus-color: transparent; -fx-faint-color: transparent;" styleClass="main_pane">
+                     <content>
+                        <VBox fx:id="achievementVbox" alignment="TOP_RIGHT" prefHeight="576.0" prefWidth="473.0" styleClass="main_pane">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="465.0" style="-fx-font-size: 30;" styleClass="title" text="Achievements">
+                                 <font>
+                                    <Font name="Monaco" size="28.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIcon glyphStyleClass="icon" iconName="CHECK_CIRCLE_ALT" selectionEnd="0" size="50px" translateX="-20.0" />
+                                 </graphic>
+                                 <padding>
+                                    <Insets top="25.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets left="30.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" right="40.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

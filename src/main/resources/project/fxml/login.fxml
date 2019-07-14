@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="720.0" styleClass="main_pane" stylesheets="@../styles/stylesGreen.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controllers.LoginController">
+    <children>
+      <ImageView fitHeight="500.0" fitWidth="850.0" layoutX="-60.0" layoutY="105.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/bg1.png" />
+         </image>
+         <effect>
+            <Glow />
+         </effect>
+      </ImageView>
+        <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <effect>
+                <DropShadow />
+            </effect>
+            <children>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="350.0" prefWidth="350.0" spacing="20.0" styleClass="card">
+                      <children>
+                          <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 35;" styleClass="title" text="Login">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Text>
+                          <HBox alignment="CENTER_RIGHT" maxWidth="-Infinity" prefWidth="250.0" style="-fx-border-color: #a2a2a2; -fx-border-width: 0px 0px 2px 0px;">
+                              <VBox.margin>
+                                  <Insets />
+                              </VBox.margin>
+                              <children>
+                                  <TextField fx:id="username" promptText="username" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+                                      <HBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                      </HBox.margin>
+                                  </TextField>
+                                  <FontAwesomeIcon fill="#888888" iconName="USER" size="2em">
+                                      <HBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                      </HBox.margin>
+                                  </FontAwesomeIcon>
+                              </children>
+                          </HBox>
+                          <HBox alignment="CENTER_RIGHT" maxWidth="-Infinity" prefWidth="250.0" style="-fx-border-color: #a2a2a2; -fx-border-width: 0px 0px 2px 0px;">
+                              <children>
+                                  <PasswordField fx:id="password" onAction="#login" promptText="password" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+                                      <HBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                      </HBox.margin>
+                                  </PasswordField>
+                                  <FontAwesomeIcon fill="#888888" iconName="KEY" size="2em">
+                                      <HBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                      </HBox.margin>
+                                  </FontAwesomeIcon>
+                              </children>
+                              <VBox.margin>
+                                  <Insets />
+                              </VBox.margin>
+                          </HBox>
+                          <Label fx:id="loginstatus" alignment="CENTER" prefHeight="26.0" prefWidth="304.0" />
+                  <JFXButton fx:id="btnLogin" onAction="#login" prefHeight="38.0" prefWidth="186.0" style="-fx-font-size: 20; -fx-background-radius: 10;" text="Login">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXButton>
+                          <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                              <children>
+                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Need an account?        ">
+                                      <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                      </HBox.margin>
+                                  </Text>
+                        <JFXButton fx:id="btnSignUp" onAction="#signup" style="-fx-background-radius: 10;" text="Sign up" />
+                              </children>
+                          </HBox>
+                      </children>
+
+                      <padding>
+                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                      </padding>
+                  </VBox>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>

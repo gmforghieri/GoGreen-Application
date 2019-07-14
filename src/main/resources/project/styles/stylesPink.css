@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One');
+
+@font-face {
+    font-family: 'Margarine', cursive;
+    src: url('Margarine-Regular.ttf');
+}
+
+* {
+    -dark-color: linear-gradient(#cb98cc 0%, #b589be 100%);
+    -dark-color-2: linear-gradient(#c38ec7 0%, #b98dbe 100%);
+    -dark-color-more: linear-gradient(#69426b 0%, #422b55 100%);
+    -light-color: linear-gradient(#fcf9f9 0%, #fcf0f1 100%);
+    -light-color-2: linear-gradient(#fbf7fc 0%, #fce6f6 100%);
+    -subtext-color: linear-gradient(#d3b5c4 0%, #ba93a5 100%);
+}
+
+/* default styling */
+.root * {
+    -fx-font-family: 'Carter One', cursive;
+    -fx-font-size: 12pt;
+}
+
+.title {
+    -fx-font-family: 'Carter One', cursive;
+    -fx-font-size: 15pt;
+    -fx-fill: -dark-color;
+    -fx-text-fill: -dark-color;
+}
+
+.main_pane {
+    -fx-background-color: -light-color-2;
+}
+
+.side_drawer {
+    -fx-background-color: -light-color;
+}
+
+.jfx-text-field {
+    -jfx-focus-color: -dark-color;
+    -jfx-unfocus-color: -subtext-color;
+    -fx-prompt-text-fill: -subtext-color;
+    -fx-text-fill: -dark-color-more;
+}
+
+/* Styling of tan pane*/
+.jfx-tab-pane:top .depth-container {
+    -fx-effect: none;
+}
+
+.jfx-tab-pane:top .headers-region {
+    -fx-background-color: -dark-color;
+}
+
+.jfx-tab-pane:top .tab-header-background {
+    -fx-background-color: -subtext-color;
+}
+
+.jfx-tab-pane:top .tab-selected-line {
+    -fx-background-color: -light-color;
+}
+
+.jfx-tab-pane:top .headers-region {
+    -fx-effect: none;
+}
+
+/* styling of card  */
+.jfx-button {
+    -fx-background-color: -dark-color;
+    -fx-text-fill: -light-color-2;
+    -fx-background-radius: 2;
+}
+
+.jfx-button:hover {
+    -fx-background-color: -dark-color;
+    -fx-effect: dropshadow(three-pass-box, rgba(20, 33, 22, 0.5), 10, 0, 0, 0);
+    -fx-cursor: hand;
+}
+
+.jfx-button-side {
+    -fx-font-family: 'Carter One', cursive;
+    -fx-text-fill: -light-color;
+    -fx-background-color: -dark-color;
+}
+
+.icon {
+    -fx-fill: -dark-color;
+}
+
+.jfx-button-side:hover {
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+    -fx-effect: none;
+}
+
+/* styling of card  */
+.card {
+    -fx-background-color: -light-color;
+    -fx-background-radius: 4px;
+    -fx-effect: dropshadow( three-pass-box , rgba(93, 93, 93, 0.44), 7, 0.0 , 0.0 , 0 );
+}
+
+.card .title {
+    -fx-font-family: 'Carter One', cursive;
+    -fx-font-size: 14pt;
+    -fx-fill: -dark-color-2;
+    -fx-text-fill: -dark-color-2;
+}
+
+.text_card {
+    -fx-fill: -subtext-color;
+    -fx-text-fill: -subtext-color;
+}
+
+.subtext_card {
+    -fx-fill: -subtext-color;
+    -fx-text-fill: -subtext-color;
+}
+
+/* styling of dark card */
+.dark_card {
+    -fx-background-color: -dark-color-2;
+    -fx-background-radius: 4px;
+    -fx-font-size: 12pt;
+    -fx-effect: dropshadow( three-pass-box , rgba(130, 130, 130, 0.44), 7, 0.0 , 0.0 , 0 );
+}
+
+.dark_card .title {
+    -fx-font-family: 'Carter One', cursive;
+    -fx-font-size: 15pt;
+    -fx-fill: -light-color-2;
+}
+
+.text_dark_card {
+    -fx-fill: -light-color;
+    -fx-text-fill: -light-color;
+}
+
+.dark_card .jfx-button {
+    -fx-background-color: -light-color;
+    -fx-background-radius: 5px;
+}
+
+.dark_card .jfx-button .text {
+    -fx-fill: -dark-color-2;
+}
+
+.dark_card .jfx-text-field {
+    -jfx-focus-color: -light-color;
+    -jfx-unfocus-color: linear-gradient(rgba(253, 255, 250, 0.58) 0%, rgba(242, 253, 244, 0.59) 100%);
+    -fx-prompt-text-fill: linear-gradient(rgba(253, 255, 250, 0.58) 0%, rgba(242, 253, 244, 0.59) 100%);
+    -fx-text-fill: -light-color;
+}
+
+.dark_card .date-picker-popup > .month-year-pane {
+    -fx-background-color: -dark-color-2;
+}
+
+.dark_card .jfx-date-picker {
+    -jfx-default-color: -light-color;
+}
+
+/* styling of dark card parent = dark card contains normal card */
+.dark_card_parent {
+    -fx-background-color: -dark-color-2;
+    -fx-background-radius: 4px;
+    -fx-font-size: 12pt;
+}
+
+.title_dark_card_parent {
+    -fx-font-family: 'Carter One', cursive;
+    -fx-font-size: 15pt;
+    -fx-fill: -light-color-2;
+}
+
+/* styling of circle home screen  */
+.circle {
+    -fx-fill: -light-color-2;
+    -fx-stroke: -dark-color-2;
+}
+
+.circle_text {
+    -fx-font-size: 24pt;
+    -fx-text-fill: -dark-color-2;
+    -fx-fill:  -dark-color-2;
+}
+
+/* scroll bar starts here */
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: -dark-color;
+
+    -fx-background-radius: 2em;
+    -fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: -dark-color;
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+
+}
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:  -dark-color;
+}
+.table-view .column-header .label{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+.table-view .cell{
+    -fx-cell-size: 35;
+    -fx-alignment: CENTER;
+    -fx-background-color: #ededed;
+    -fx-border-color: #e5e5e5;
+    -fx-text-fill: grey;
+    -fx-alignment: CENTER;
+}
+.table-row-cell:selected {
+    -fx-background-color: whitesmoke;
+    -fx-text-background-color: -dark-color;
+}

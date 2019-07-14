@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #FFFEF7#FFFEF7;" stylesheets="@../styles/stylesGreen.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controllers.TransportationController">
+    <children>
+        <BorderPane prefHeight="576.0" prefWidth="1024.0" styleClass="main_pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                          <HBox spacing="20.0">
+                              <children>
+                        <JFXTextField fx:id="locationFrom" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="47.0" prefWidth="232.0" promptText="From" />
+                        <JFXTextField fx:id="locationTo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="47.0" prefWidth="232.0" promptText="destination" />
+                                  <Region HBox.hgrow="ALWAYS" />
+                        <JFXButton fx:id="BtnDisplayMap" defaultButton="true" minHeight="-Infinity" onAction="#handleBtnDisplayMap" prefHeight="50.0" prefWidth="172.0" styleClass="jfx-button" text="Display on Map" textFill="WHITE" />
+                              </children>
+                              <padding>
+                                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                              </padding>
+                          </HBox>
+                  <JFXTabPane>
+                     <tabs>
+                      <Tab text="Map">
+                        <content>
+                          <AnchorPane>
+                                 <children>
+                                    <StackPane>
+                                       <children>
+                                                  <ImageView blendMode="MULTIPLY" nodeOrientation="INHERIT" opacity="0.44" pickOnBounds="true" preserveRatio="true" translateY="85.0">
+                                             <image>
+                                                <Image url="@../img/bg2.png" />
+                                             </image>
+                                             <effect>
+                                                <Glow />
+                                             </effect>
+                                                  </ImageView>
+                                                  <ImageView fx:id="imageMap" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                                          <JFXDrawer fx:id="co2InfoDrawer" defaultDrawerSize="350.0" direction="BOTTOM" maxHeight="500.0" maxWidth="200.0" overLayVisible="false" translateX="275.0" translateY="-115.0" StackPane.alignment="BOTTOM_CENTER" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab fx:id="advanceCalculator" onSelectionChanged="#handleTabCalculator" text="Advance Calculator">
+                        <content>
+                          <AnchorPane styleClass="main_pane">
+                                 <children>
+                                    <WebView fx:id="webCalculator" minHeight="-1.0" minWidth="-1.0" prefHeight="480.4" prefWidth="822.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                     </tabs>
+                  </JFXTabPane>
+               </children>
+            </VBox>
+         </center>
+         <left>
+            <JFXDrawer fx:id="drawerSidePanel" prefHeight="576.0" prefWidth="201.0" resizeContent="true" styleClass="side_drawer" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="175.0" fitWidth="180.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/logo.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Region VBox.vgrow="ALWAYS" />
+                        <Label fx:id="userLbl" alignment="CENTER" prefHeight="49.0" prefWidth="209.0" style="-fx-font-size: 30;" styleClass="title" text="UserName">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <VBox prefHeight="320.0" prefWidth="150.0" spacing="3.0">
+                           <children>
+                              <StackPane>
+                                 <children>
+                                    <FontAwesomeIcon accessibleRole="BUTTON" glyphStyleClass="icon" iconName="HOME" size="50px" />
+                                    <JFXButton alignment="CENTER" onAction="#handleBtnHome" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 22;" styleClass="jfx-button-side" text="Home">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane>
+                                 <children>
+                                    <FontAwesomeIcon glyphStyleClass="icon" iconName="USER" size="47" />
+                                    <JFXButton alignment="CENTER" onAction="#handleBtnProfile" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 22;" text="Profile">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <styleClass>
+                                          <String fx:value="jfx-button-side" />
+                                          <String fx:value="jfx-button-side-alter" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane>
+                                 <children>
+                                    <FontAwesomeIcon glyphStyleClass="icon" iconName="BUS" size="47" />
+                                    <JFXButton alignment="CENTER" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 22;" styleClass="jfx-button-side" text="Transport">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane>
+                                 <children>
+                                    <FontAwesomeIcon glyphStyleClass="icon" iconName="TROPHY" size="50" />
+                                    <JFXButton alignment="CENTER" onAction="#handleBtnLeaderboard" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 22;" text="Leaderboard">
+                                       <styleClass>
+                                          <String fx:value="jfx-button-side" />
+                                          <String fx:value="jfx-button-side-alter" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane>
+                                 <children>
+                                    <FontAwesomeIcon glyphStyleClass="icon" iconName="ARROW_LEFT" selectionEnd="0" size="50" />
+                                    <JFXButton alignment="CENTER" onAction="#handleBtnLogout" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 22;" styleClass="jfx-button-side" text="Log Out">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="3.0" left="3.0" right="3.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="1.0" top="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <effect>
+                  <DropShadow color="#878787d0" offsetY="2.0" />
+               </effect>
+            </JFXDrawer>
+         </left>
+        </BorderPane>
+    </children>
+</AnchorPane>

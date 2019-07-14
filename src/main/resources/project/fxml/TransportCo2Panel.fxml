@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="454.0" prefWidth="191.0" spacing="7.0" styleClass="dark_card_parent" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controllers.TransportCo2PanelController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 22;" styleClass="title_dark_card_parent" text="Give your car a rest Reduce C02 emission" textAlignment="CENTER" wrappingWidth="232.8703498840332">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Text>
+      <VBox prefHeight="175.0" prefWidth="202.0" spacing="3.0" styleClass="card">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Be active, do cycling!">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Text>
+            <HBox spacing="2.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_card" text="Travel distance " />
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label fx:id="distanceBike" styleClass="text_card" text="1 km" />
+               </children>
+               <padding>
+                  <Insets left="2.0" right="2.0" />
+               </padding>
+            </HBox>
+            <HBox spacing="2.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_card" text="Travel time " />
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label fx:id="timeBike" styleClass="text_card" text="5 min" />
+               </children>
+               <padding>
+                  <Insets left="2.0" right="2.0" />
+               </padding>
+            </HBox>
+            <HBox spacing="2.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_card" text="CO2 reduction">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Text>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label fx:id="co2ReductionBike" styleClass="text_card" text="70 g/km" />
+               </children>
+               <padding>
+                  <Insets left="2.0" right="2.0" />
+               </padding>
+            </HBox>
+            <JFXButton fx:id="btnCommitBike" onAction="#handleCommitBike" prefHeight="37.0" prefWidth="228.0" text="Commit to Bike" textFill="WHITE" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="6.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </VBox>
+      <VBox spacing="3.0" styleClass="card">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Check public transprot">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Text>
+            <HBox spacing="2.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_card" text="Travel distance " />
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label fx:id="distancePT" styleClass="text_card" text="7 km" />
+               </children>
+               <padding>
+                  <Insets left="2.0" right="2.0" />
+               </padding>
+            </HBox>
+            <HBox spacing="2.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_card" text="Travel time " />
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label fx:id="timePT" styleClass="text_card" text="15 min" />
+               </children>
+               <padding>
+                  <Insets left="2.0" right="2.0" />
+               </padding>
+            </HBox>
+            <HBox spacing="2.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text_card" text="CO2 reduction">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label fx:id="co2ReductionPT" styleClass="text_card" text="30 g/km" />
+               </children>
+               <padding>
+                  <Insets left="2.0" right="2.0" />
+               </padding>
+            </HBox>
+            <JFXButton fx:id="btnCommitPT" onAction="#handleCommitPT" prefHeight="37.0" prefWidth="264.0" text="Commit to PT" textFill="WHITE" />
+         </children>
+         <padding>
+            <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="13.0" right="13.0" top="5.0" />
+   </padding>
+   <effect>
+      <DropShadow color="#888888" />
+   </effect>
+   <cursor>
+      <Cursor fx:constant="CLOSED_HAND" />
+   </cursor>
+</VBox>

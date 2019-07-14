@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #FFFEF7;" stylesheets="@../styles/stylesGreen.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controllers.LeaderboardController">
+    <children>
+        <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" styleClass="main_pane" AnchorPane.leftAnchor="0.0">
+         <center>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="834.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <FontAwesomeIcon glyphStyleClass="icon" iconName="TROPHY" size="55px" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 35;" styleClass="title" text="Leaderboard" textAlignment="CENTER" wrappingWidth="231.36488342285156">
+                           <font>
+                              <Font size="50.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="userTable" maxWidth="-Infinity" prefHeight="497.0" prefWidth="683.0" styleClass="card">
+                     <columns>
+                        <TableColumn fx:id="colUsername" prefWidth="313.53289794921875" text="Username" />
+                        <TableColumn fx:id="colCO2" prefWidth="366.46710205078125" text="CO2 Emission Prevention(KG)" />
+                     </columns>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow color="#888888" />
+                     </effect>
+                  </TableView>
+               </children>
+               <padding>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+            </VBox>
+         </center>
+         <left>
+            <JFXDrawer fx:id="drawerSidePanel" prefHeight="576.0" prefWidth="201.0" resizeContent="true" styleClass="side_drawer" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="175.0" fitWidth="180.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/logo.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Region VBox.vgrow="ALWAYS" />
+                        <Label fx:id="userLbl" alignment="CENTER" prefHeight="49.0" prefWidth="167.0" style="-fx-font-size: 30;" styleClass="title" text="UserName">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <VBox prefHeight="320.0" prefWidth="150.0" spacing="3.0">
+                           <children>
+                              <StackPane>
+                                 <children>
+                                    <FontAwesomeIcon accessibleRole="BUTTON" glyphStyleClass="icon" iconName="HOME" size="50px" />
+                                    <JFXButton alignment="CENTER" onAction="#handleBtnHome" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 22;" styleClass="jfx-button-side" text="Home">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane>
+                                 <children>
+                                    <FontAwesomeIcon glyphStyleClass="icon" iconName="USER" size="47" />
+                                    <JFXButton alignment="CENTER" onAction="#handleBtnProfile" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 22;" text="Profile">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <styleClass>
+                                          <String fx:value="jfx-button-side" />
+                                          <String fx:value="jfx-button-side-alter" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane>
+                                 <children>
+                                    <FontAwesomeIcon glyphStyleClass="icon" iconName="BUS" size="47" />
+                                    <JFXButton alignment="CENTER" onAction="#handleBtnTransportation" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 22;" styleClass="jfx-button-side" text="Transport">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane>
+                                 <children>
+                                    <FontAwesomeIcon glyphStyleClass="icon" iconName="TROPHY" size="50" />
+                                    <JFXButton alignment="CENTER" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 22;" text="Leaderboard">
+                                       <styleClass>
+                                          <String fx:value="jfx-button-side" />
+                                          <String fx:value="jfx-button-side-alter" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                              <StackPane>
+                                 <children>
+                                    <FontAwesomeIcon glyphStyleClass="icon" iconName="ARROW_LEFT" selectionEnd="0" size="50" />
+                                    <JFXButton alignment="CENTER" onAction="#handleBtnLogout" prefHeight="75.0" prefWidth="200.0" style="-fx-font-size: 22;" styleClass="jfx-button-side" text="Log Out">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                 </children>
+                              </StackPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="3.0" left="3.0" right="3.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="1.0" top="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <effect>
+                  <DropShadow color="#878787d0" offsetY="2.0" />
+               </effect>
+            </JFXDrawer>
+         </left>
+        </BorderPane>
+    </children>
+</AnchorPane>
