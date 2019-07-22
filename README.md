@@ -7,13 +7,13 @@
 </sup>
 </p>
 
-##About the project
+## About the project
 This project was part of my university curriculum which has been completed in a group of 4 with agile and SCRUM methodologies.
 I have been mainly responsible for setting up the database, the project structure, building the backend, login and signup screen
 and also fulfilled the project manager role by creating weekly documentation,
 managing the scrumboard and setting the goals for the weekly sprints during the 10 week course.
 
-##How to run the application
+## How to run the application
 To run the application clone down the repository and simply run the GoGreen.jar file. You need to have the Java Runtime Environment(JRE) installed on your computer in order to run the app. (https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ##Using the GoGreen App
