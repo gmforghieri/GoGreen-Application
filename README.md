@@ -13,10 +13,10 @@ I have been mainly responsible for setting up the database, the project structur
 and also fulfilled the project manager role by creating weekly documentation,
 managing the scrumboard and setting the goals for the weekly sprints during the 10 week course.
 
-## How to run the application
+## Running the application
 To run the application clone down the repository and simply run the GoGreen.jar file. You need to have the Java Runtime Environment(JRE) installed on your computer in order to run the app. (https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
-##Using the GoGreen App
+## App Tour
 #### Login
 ![Screenshot of Login Screen](doc/screenshots/Login.png)
 
