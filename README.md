@@ -7,6 +7,9 @@
 </sup>
 </p>
 
+##Running the app
+To run the application clone down the repository and simply run the GoGreen.jar file. You need to have the Java Runtime Environment(JRE) installed on your computer in order to run the app. (https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+
 ## How to use the GoGreen App
 ### Login
 #### Login
@@ -34,8 +37,9 @@ When you add a solar panel, you get this form for some additional information.
 e
 ### Transport
 ![Screenshot of Transportation Screen](doc/screenshots/Transportation.png)
-If you commit to Bike of PT (Public Transport), this will also put a google maps link in you clipboard with the route.
-So you can immediately see what route is suggested in you browser.
+If you commit to Bike or PT (Public Transport), this will also put a google maps link in you clipboard with the route.
+So you can immediately see what route is suggested in you browser. 
+This feature is currently not functional as it required a paid Google API which was provided by one of the team members for the duration of the project.
 
 ### Leaderboard
 ![Screenshot of the Leaderboard Screen](doc/screenshots/Leaderboard.png)
