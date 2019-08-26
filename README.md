@@ -18,7 +18,7 @@ The presentation and grading rubric can also be found in the repository.
 ##Tools used for the project
 Tools: Agile and Scrum methodologies, Checkstyle and Jacoco  
 Technologies: JavaFX, Gluon Scenebuilder, Java Springboot, Hibernate, MySQL, jUnit, Mockito, Maven,
-Continuous Integration, Git with Gitlab
+Continuous Integration, Git with Gitlab, JFoenix Material Design
 
 ##Responsibilities
 I have been mainly responsible for building the backend with the Java Springboot framework, 
@@ -43,7 +43,7 @@ The circle in the middle shows the total CO2 reduction.
 The notification box at the bottom shows how much co2 has been saved by the last action. 
 
 
-![Screenshot of HomeScreen extended](doc/screenshots/HomeScreenExt.png)
+![Screenshot of HomeScreen extended](doc/screenshots/SolarPanel.png)
 When you add a solar panel, additional details can be provided.
 
 ### Transport
