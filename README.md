@@ -15,12 +15,12 @@ by themselves from scratch with weekly progress reviews with teaching assistants
 The course/project concluded with a final presentation and received a 10/10 grade.  
 The presentation and grading rubric can also be found in the repository.
 
-##Tools used for the project
+## Tools used for the project
 Tools: Agile and Scrum methodologies, Checkstyle and Jacoco  
 Technologies: JavaFX, Gluon Scenebuilder, Java Springboot, Hibernate, MySQL, jUnit, Mockito, Maven,
 Continuous Integration, Git with Gitlab, JFoenix Material Design
 
-##Responsibilities
+## Responsibilities
 I have been mainly responsible for building the backend with the Java Springboot framework, 
 setting up the project structure, login, signup and functionality of 2 activities.
 I have also fulfilled the project manager role by creating weekly documentation,
@@ -57,6 +57,7 @@ This feature is no longer functional as it requires a paid Google API which was 
 
 ### Profile
 ![Screenshot of Profile](doc/screenshots/Profile.png)
-There are in total 12 different achievement, each with a varying degree of difficulty.
+There are 12 different achievements, each with varying degree of difficulty which can be viewed under the profile section.
+The user can also switch the theme of the app according to their liking and see their uses statistics.
 
 
