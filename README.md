@@ -13,7 +13,7 @@ from which only 4 members remained by the end of the course. Objective of the co
 helping people live a more sustainable lifestyle.Students were thrown in the deep and had to develop the app completely
 by themselves from scratch with weekly progress reviews with teaching assistants.
 The course/project concluded with a final presentation and received a 10/10 grade.  
-The presentation and grading rubric can also be found in the repository.
+The presentation, calculations for the CO2 emissions per activity and grading rubric can also be found in the repository.
 
 ## Tools used for the project
 Tools: Agile and Scrum methodologies, Checkstyle and Jacoco  
@@ -30,7 +30,7 @@ Currently there are 6 activity recommendations to help users reduce their emissi
 ## Running the application
 To run the application clone down the repository and simply run the GoGreen.jar file. You need to have the Java Runtime Environment(JRE) installed on your computer in order to run the app. (https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
-## Quick App Tour
+## App Tour
 #### Login
 ![Screenshot of Login Screen](doc/screenshots/Login.png)
 
@@ -38,7 +38,7 @@ To run the application clone down the repository and simply run the GoGreen.jar 
 ![Screenshot of Sign Up Screen](doc/screenshots/SignUp.png)
 
 ### Homescreen
-![Screenshot of Homescreen](doc/screenshots/Home.png)
+![Screenshot of Homescreen](doc/screenshots/HomeScreen.png)
 The circle in the middle shows the total CO2 reduction.
 The notification box at the bottom shows how much co2 has been saved by the last action. 
 
