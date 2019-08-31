@@ -8,11 +8,11 @@
 </p>
 
 # About the project
-This project was part of my university curriculum, originally with a group of 7 
-from which only 4 members remained by the end of the course. Objective of the course was to build a software application
-helping people live a more sustainable lifestyle.Students were thrown in the deep and had to develop the app completely
-by themselves from scratch with weekly progress reviews with teaching assistants.
-The course/project concluded with a final presentation and received a 10/10 grade.  
+This project was part of my university curriculum, originally with a group of 7 from which only 4 members remained
+by the end of the course. Objective of the course was to build a software application helping people live
+more sustainable lifestyle. Students were thrown in the deep and had to develop the app completely
+by themselves from scratch with weekly progress reviews with teaching assistants.  
+The course/project concluded with a final presentation and received a 10/10 grade.   
 The presentation, calculations for the CO2 emissions per activity and grading rubric can also be found in the repository.
 
 ## Tools used for the project
@@ -28,7 +28,7 @@ managing the scrumboard and setting the goals for the weekly sprints during the 
 Currently there are 6 activity recommendations to help users reduce their emissions.   
 
 ## Running the application
-To run the application clone down the repository and simply run the GoGreen.jar file. You need to have the Java Runtime Environment(JRE) installed on your computer in order to run the app. (https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+To run the application clone down the repository and simply run the GoGreen App Executable.jar file. You need to have the Java Runtime Environment(JRE) installed on your computer in order to run the app. (https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ## App Tour
 #### Login
@@ -53,8 +53,8 @@ So you can immediately see what route is suggested in you browser.
 This feature is no longer functional as it requires a paid Google API which was provided by one of the team members for the duration of the project.
 
 ![Screenshot of Transportation Screen](doc/screenshots/Calculator.png)
-The Transportation tab also containing and integrated calculator from https://calculator.carbonfootprint.com/calculator.aspx,
-which can be used for the calculation of various activities.
+The Transportation tab also contains and integrated calculator from https://calculator.carbonfootprint.com/calculator.aspx,
+which can be used to calculate the impact of various activities with great detail.
 
 ### Leaderboard
 ![Screenshot of the Leaderboard Screen](doc/screenshots/Leaderboard.png)
