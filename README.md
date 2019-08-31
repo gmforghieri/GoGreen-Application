@@ -52,6 +52,10 @@ If you commit to Bike or PT (Public Transport), this will also put a google maps
 So you can immediately see what route is suggested in you browser. 
 This feature is no longer functional as it requires a paid Google API which was provided by one of the team members for the duration of the project.
 
+![Screenshot of Transportation Screen](doc/screenshots/Calculator.png)
+The Transportation tab also containing and integrated calculator from https://calculator.carbonfootprint.com/calculator.aspx,
+which can be used for the calculation of various activities.
+
 ### Leaderboard
 ![Screenshot of the Leaderboard Screen](doc/screenshots/Leaderboard.png)
 

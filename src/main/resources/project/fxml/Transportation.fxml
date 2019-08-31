@@ -63,7 +63,7 @@
                               </AnchorPane>
                         </content>
                       </Tab>
-                      <Tab fx:id="advanceCalculator" onSelectionChanged="#handleTabCalculator" text="Advance Calculator">
+                      <Tab fx:id="advanceCalculator" onSelectionChanged="#handleTabCalculator" text="Integrated Calculator">
                         <content>
                           <AnchorPane styleClass="main_pane">
                                  <children>
