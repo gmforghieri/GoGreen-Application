@@ -3,7 +3,7 @@
 </h1>
 <p align="center">
 <sup>
-<b>GoGreen is an app to help you track and reduce your CO2 emissions with gamification aspects</b>
+<b>GoGreen is a Java RESTful application to help you track and reduce your CO2 emissions with gamification aspects</b>
 </sup>
 </p>
 
