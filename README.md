@@ -9,7 +9,7 @@
 
 # About the project
 This project was part of my university curriculum, originally with a group of 7 from which only 4 members remained
-by the end of the course. Objective of the course was to build a software application helping people live
+by the end of the course. Objective of the course was to build a software application helping people live a
 more sustainable lifestyle. Students were thrown in the deep and had to develop the app completely
 by themselves from scratch with weekly progress reviews with teaching assistants.  
 The course/project concluded with a final presentation and received a 10/10 grade.   
@@ -22,7 +22,7 @@ Continuous Integration, Git with Gitlab, JFoenix Material Design
 
 ## Responsibilities
 I have been mainly responsible for building the backend with the Java Springboot framework, 
-setting up the project structure, login, signup and functionality of 2 activities.
+setting up the project structure, login-signup screens and the functionality of 2 activities.
 I have also fulfilled the project manager role by creating weekly documentation,
 managing the scrumboard and setting the goals for the weekly sprints during the 10 week course.
 Currently there are 6 activity recommendations to help users reduce their emissions.   
@@ -62,6 +62,6 @@ which can be used to calculate the impact of various activities with great detai
 ### Profile
 ![Screenshot of Profile](doc/screenshots/Profile.png)
 There are 12 different achievements, each with varying degree of difficulty which can be viewed under the profile section.
-The user can also switch the theme of the app according to their liking and see their uses statistics.
+The user can also switch the color theme of the app according to their liking and see profile statistics.
 
 
