@@ -28,7 +28,7 @@ managing the scrumboard and setting the goals for the weekly sprints during the 
 Currently there are 6 activity recommendations to help users reduce their emissions.   
 
 ## Running the application
-To run the application clone down the repository and simply run the GoGreen App Executable.jar file. You need to have the Java Runtime Environment(JRE) installed on your computer in order to run the app. (https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+To run the application clone down the repository and simply run the GoGreen App Executable.jar file. You need to have the [Java Runtime Environment(JRE)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) installed on your computer in order to run the app.
 
 ## App Tour
 #### Login
@@ -53,7 +53,7 @@ So you can immediately see what route is suggested in you browser.
 This feature is no longer functional as it requires a paid Google API which was provided by one of the team members for the duration of the project.
 
 ![Screenshot of Transportation Screen](doc/screenshots/Calculator.png)
-The Transportation tab also contains and integrated calculator from https://calculator.carbonfootprint.com/calculator.aspx,
+The Transportation tab also contains and [integrated carbon footprint calculator](https://calculator.carbonfootprint.com/calculator.aspx),
 which can be used to calculate the impact of various activities with great detail.
 
 ### Leaderboard
